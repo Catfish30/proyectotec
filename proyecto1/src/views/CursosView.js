@@ -1,13 +1,14 @@
 import React from 'react'
 
 import { useState, useEffect } from "react";
-import { Card, Button,Row,Col } from "react-bootstrap"
+import { Card, Row,Col } from "react-bootstrap"
+import { Link } from 'react-router-dom'
 
 import { obtenerCursos } from "../services/CursoService";
 
 
 
-export default function CursoView() {
+export default function CursosView() {
 
     const [cursos,setCurso] = useState([])    
 
@@ -41,7 +42,7 @@ export default function CursoView() {
                             <Card.Text>
                             Docente: {curso.curso_docente}
                             </Card.Text>
-                            <Button variant="primary btn-sm ">Ingresar</Button>
+                            <Link className="btn btn-primary btn-sm " to={`/cursos/${curso.curso_id}`} >Ingresar</Link>
                         </Card.Body>
                         </Card>
                 </Col>
