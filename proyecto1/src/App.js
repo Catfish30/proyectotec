@@ -1,9 +1,18 @@
 import React from 'react'
+import { BrowserRouter as Router, Switch } from 'react-router-dom'
+// import CursoView from './views/CursoView'
+
+import Routes from './Routes'
 
 export default function App() {
+  
   return (
-    <div>
-      <h1>Bootstrap</h1>
-    </div>
+    <Router>
+      <div className="container p-4">
+      <Switch>
+        <Routes />
+      </Switch>
+      </div>
+    </Router>
   )
 }
