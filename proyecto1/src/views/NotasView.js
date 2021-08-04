@@ -2,6 +2,7 @@ import React from 'react'
 
 import { useState,useEffect } from "react";
 import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { obtenerNota } from "../services/NotaService";
 
@@ -50,6 +51,9 @@ export default function NotasView() {
                         </tr>
                 </tbody>
             </table>
+            <Link className="btn btn-primary" to={`/`}>
+                Regresar
+            </Link>
  
         </div>
     )
