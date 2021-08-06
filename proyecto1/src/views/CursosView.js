@@ -29,9 +29,9 @@ export default function CursosView() {
 
 
     return (
-        <div>
+        <div className="container p-4">
             
-            <h1 className="py-3">Cursos Matriculados</h1>
+            <h2 className="py-2">Cursos Matriculados</h2>
             <Row xs={1} md={3} className="g-4">
             {cursos.map((curso,i) => (
                 <Col key={i}>
