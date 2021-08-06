@@ -30,7 +30,7 @@ export default function NotasView() {
 
 
     return (
-        <div>
+        <div className='container p-4' style={{minHeight:'74vh'}}>
            <h1>Notas</h1>
            
            <table className="table">

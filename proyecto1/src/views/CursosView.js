@@ -29,10 +29,10 @@ export default function CursosView() {
 
 
     return (
-        <div className="container p-4">
+        <div className="container" style={{minHeight:'74vh'}}>
             
             <h2 className="py-2">Cursos Matriculados</h2>
-            <Row xs={1} md={3} className="g-4">
+            <Row xs={1} md={3} className="g-4" align="center">
             {cursos.map((curso,i) => (
                 <Col key={i}>
                     <Card style={{ width: '14rem' }} >

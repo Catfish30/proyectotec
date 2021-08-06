@@ -25,7 +25,7 @@ export default function NavTop() {
                     </Nav.Item>                
                 </Nav>
                 </Navbar.Collapse>
-                <Button variant="danger">Ingresar</Button>
+                <Button variant="danger">Salir</Button>
             </Container>
             </Navbar>
         </div>
