@@ -10,11 +10,9 @@ export default function App() {
   return (
     <Router>
       <NavTop />
-      <div className="container p-4">
       <Switch>
         <Routes />
       </Switch>
-      </div>
     </Router>
   )
 }
